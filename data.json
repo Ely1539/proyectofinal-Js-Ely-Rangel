@@ -1,0 +1,26 @@
+[
+{"id": 1, "nombre":"SIRIUS","localidad":"caba","telefono":1138856521},
+{"id": 2, "nombre":"TODAY","localidad":"moreno","telefono":1135846227},
+{"id": 2, "nombre":"SELL","localidad":"moreno","telefono":1121854523},
+{"id": 4, "nombre":"PRESS","localidad":"entre Rios","telefono":1238457526}, 
+{"id": 5, "nombre":"ANTT","localidad":"corrientes","telefono":183785529},
+{"id": 6, "nombre":"TIMES","localidad":"la Plata","telefono":1138635523},
+{"id": 3, "nombre":"ROXY","localidad":"lujan","telefono":1232877520},
+{"id": 7, "nombre":"ROLLS","localidad":"caba","telefono":1188836522},
+{"id": 8, "nombre": "REICH","localidad":"chubut","telefono":123935521},
+{"id": 9, "nombre":"RRJJ","localidad":"chubut","telefono":1148454520},
+{"id": 10,"nombre":"PARTS","localidad":"lujan","telefono":1137844523},
+{"id": 11,"nombre":"SELF","localidad":"caba","telefono":1234854529},
+{"id": 12,"nombre": "SIRIUS THING","localidad":"moreno","telefono": 1137836501},
+{"id": 13,"nombre": "PRIVIUS","localidad":"ciudadela","telefono": 1147853521},
+{"id": 14,"nombre": "LOST GUYS","localidad":"moron","telefono": 1133354523}, 
+{"id": 15,"nombre": "CREATE","localidad":"moreno","telefono": 1138546527},
+{"id": 16,"nombre": "RAPERS","localidad":"caba","telefono": 113384529},
+{"id": 17,"nombre":"PEPERS","localidad":"rio cuarto","telefono": 123895621},
+{"id": 18,"nombre":"MANTRAX","localidad":"rio negro","telefono": 1138846530},
+{"id": 19,"nombre":"BEST GIVE","localidad":"san vicente","telefono": 1132856521},
+{"id": 20,"nombre":"CHINESE","localidad":"chubut","telefono": 1135866529},
+{"id": 21,"nombre":"JUST","localidad":"lujan","telefono": 1038156526}
+]
+
+

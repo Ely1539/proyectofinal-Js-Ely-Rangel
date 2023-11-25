@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clientes</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <a href="./index.html"></a>
+</head>
+
+<body>
+  <div class="clientes-container"></div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="./clientes.html">Clientes</a>
+          <a class="nav-link" href="./transportistas.html">Transportistas</a>
+          <a class="nav-link" href="./calcular.html">Calcular Ganancias</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <h1 id="nuevoTransporte">Administracion de clientes</h1>
+  <form id="clienteForm">
+    <div>INGRESE CLIENTE EN TRANSITO HOY</div>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <label for="localidad">Localidad:</label>
+    <input type="text" id="localidad" name="localidad" required>
+    <button type="submit">Agregar Cliente</button>
+  </form>
+  <h2 id="listadoDeClientes">LISTADO DE CLIENTES</h2>
+  <div id="baseDeDatos"></div>
+  <button type="button" id="mostrarTodosButton">Mostrar Todos los Clientes</button>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./clientes.js"></script>
+</body>
+
+</html>

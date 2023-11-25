@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Costo de Transporte</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <a href="./index.html"></a>
+</head>
+
+<body>
+  <div class="transportes-container"></div>
+  <div id="transporteSeleccionado"></div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="./clientes.html">Clientes</a>
+          <a class="nav-link" href="./transportistas.html">Transportistas</a>
+          <a class="nav-link" href="./calcular.html">Calcular Ganancias</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <h1 id="nuevoTransporte">Calcular Ganancias</h1>
+  <form id="simuladorForm">
+    <label for="kilos">Kilos cargados:</label>
+    <input type="number" id="kilos" required>
+    <label for="precioPorKilo">Precio por kilo:</label>
+    <input type="number" id="precioPorKilo" required>
+    <button type="button" id="calcularButton">Calcular</button>
+  </form>
+  <div id="resultados">
+    <p>Precio Final: <span id="precioFinal"></span></p>
+    <p>IVA: <span id="iva"></span></p>
+    <p>Comisión de transporte: <span id="comision"></span></p>
+    <p>Ganancias totales: <span id="ganancias"></span></p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./calcular.js"></script>
+</body>
+
+</html>

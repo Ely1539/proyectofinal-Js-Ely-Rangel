@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Home</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('VNO4kWTwdaaYp_48C')
+  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div id="navegador">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">home</a>
+        <div class="collapse navbar-collapse" id="homeNav">
+          <div class="navbar-nav">
+            <a class="nav-link" href="./clientes.html">Clientes</a>
+            <a class="nav-link" href="./transportistas.html">Transportistas</a>
+            <a class="nav-link" href="./calcular.html">Calcular Ganancias</a>
+          </div>
+        </div>
+      </div>
+      <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=1138816807" class="btn-wsp" target="_blank">
+          <i class="iconoWhatsApp"> <img src="./imagenes.css/whatsapp-logo-image-15.png" class="whatsapp1"></i>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <section>
+    <h1>TRANSPORTE WORLDCONECT</h1>
+  </section>
+  <div id="operadores">
+    <form id="formulario">
+      <h2>OPERADOR REGISTRADO</h2>
+      <input type="text" id="operadorInput" placeholder="Ingrese aquí la palabra clave">
+      <input type="submit" value="enviar">
+    </form>
+    <aside>
+      <h1> MISION </h1>
+      Bienvenidos al mundo del transporte bridamos soluciones tanto para nuestros clientes como para nuestros afiliados,
+      somos una plataforma de conexion entre ambos, nuestra mision es convertirnos en un puente entre ambos y que la
+      experiencia de transporte sea mas amigable......
+    </aside>
+    <form id="form">
+      <H4>¿NECESITAS TRANSPORTAR TU CARGA? CONTACTANOS</H4>
+      <div class="field">
+        <label for="from_name">NOMBRE</label>
+        <input type="text" name="from_name" id="from_name">
+      </div>
+      <div class="field">
+        <label for="to_name">APELLIDO</label>
+        <input type="text" name="to_name" id="to_name">
+      </div>
+      <div class="field">
+        <label for="message">MENSAJE</label>
+        <input type="text" name="message" id="message">
+      </div>
+      <div class="field">
+        <label for="email_id"><E-MAIL>E-MAIL</E-MAIL></label>
+        <input type="text" name="email_id" id="email_id">
+      </div>
+      <div class="field">
+        <label for="reply_to">NUMERO TELEFONICO</label>
+        <input type="text" name="reply_to" id="reply_to">
+      </div>
+      <input type="submit" id="button" value="ENVIAR E-MAIL">
+    </form>
+    <footer>
+      <b>DIRECCION ORTIZ DE OCAMPO 2680- CABA. </b>
+      <b>TELEFONOS 1138854412-1188563322. </b>
+      <b>E-MAIL transconectclientes@gmail.com. </b>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
