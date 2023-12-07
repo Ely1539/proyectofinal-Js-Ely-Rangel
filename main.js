@@ -9,7 +9,7 @@ formulario.addEventListener("submit", (e) => {
         position: "center",
         icon: "success",
         title: "INGRESO EXITOSO",
-        showConfirmButton: false,
+        showConfirmButton: false, 
         timer: 1500
     });
     e.preventDefault();

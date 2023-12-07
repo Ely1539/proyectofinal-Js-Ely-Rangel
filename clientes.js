@@ -1,8 +1,12 @@
-document.body.className = "entrada"
-const clientes = [];
-let client = JSON.parse(localStorage.getItem("transportes")) || [];
+document.body.className = "entrada";
+
+// Cargar clientes existentes desde el almacenamiento local
+const clientes = JSON.parse(localStorage.getItem("clientes")) || [];
+
 const clientesContainers = document.getElementsByClassName("clientes-container");
 const clientesContainer = clientesContainers[0];
+
+// Mostrar clientes existentes
 clientes.forEach((cliente) => {
     const div = document.createElement("div");
     div.classList.add("cliente");
@@ -12,6 +16,7 @@ clientes.forEach((cliente) => {
         <b>Localidad: ${cliente.localidad}</b>`;
     clientesContainer.appendChild(div);
 });
+
 class Clientes {
     constructor(id, nombre, localidad) {
         this.id = id;
@@ -19,28 +24,32 @@ class Clientes {
         this.localidad = localidad;
     }
 }
+
 document.addEventListener("DOMContentLoaded", () => {
     const clienteForm = document.getElementById("clienteForm");
     const clientesContainer = document.getElementsByClassName("clientes-container")[0];
-    const clientes = [];
+
     clienteForm.addEventListener("submit", (event) => {
         Swal.fire({
             position: "center",
             icon: "success",
-            title: "Cliente Creado Con Exito",
+            title: "Cliente Creado Con Éxito",
             showConfirmButton: false,
             timer: 1500
         });
+
         event.preventDefault();
         const nombreInput = document.getElementById("nombre");
         const localidadInput = document.getElementById("localidad");
         const nombre = nombreInput.value;
         const localidad = localidadInput.value;
+
         const nuevoCliente = nombre && localidad ? {
             id: clientes.length + 1,
             nombre: nombre,
-            localidad: localidad,
+            localidad: localidad
         } : null;
+
         if (nuevoCliente) {
             clientes.push(nuevoCliente);
             const div = document.createElement("div");
@@ -58,27 +67,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.getElementById("mostrarTodosButton").addEventListener("click", () =>
-    fetch("./data.json")
-        .then(response => response.json())
-        .then(responseData => {
-            const data = responseData;
-            const baseDeDatosDiv = document.getElementById("baseDeDatos");
+// document.getElementById("mostrarTodosButton").addEventListener("click", () =>
+//     fetch("./data.json")
+//         .then(response => response.json())
+//         .then(responseData => {
+//             const data = responseData;
+//             const baseDeDatosDiv = document.getElementById("baseDeDatos");
 
-            data.forEach(cliente => {
-                const divCliente = document.createElement("div");
-                divCliente.innerHTML = `
-        <h2>Id: ${cliente.id} </h2>
-        <p>Nombre: ${cliente.nombre}</p>
-        <p>Direccion: ${cliente.localidad}</p>
-        <p>Telefono: ${cliente.telefono} <p/>
-      `;
-                baseDeDatosDiv.appendChild(divCliente);
-            });
-        })
-        .catch(error => console.error('Error fetching data:', error))
-);
-
+//             data.forEach(cliente => {
+//                 const divCliente = document.createElement("div");
+//                 divCliente.innerHTML = `
+//         <h2>Id: ${cliente.id} </h2>
+//         <p>Nombre: ${cliente.nombre}</p>
+//         <p>Direccion: ${cliente.localidad}</p>
+//         <p>Telefono: ${cliente.telefono} <p/>
+//       `;
+//                 baseDeDatosDiv.appendChild(divCliente);
+//             });
+//         })
+//         .catch(error => console.error('Error fetching data:', error))
+// );
 
 
 
