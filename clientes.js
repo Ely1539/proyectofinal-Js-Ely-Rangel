@@ -67,26 +67,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// document.getElementById("mostrarTodosButton").addEventListener("click", () =>
-//     fetch("./data.json")
-//         .then(response => response.json())
-//         .then(responseData => {
-//             const data = responseData;
-//             const baseDeDatosDiv = document.getElementById("baseDeDatos");
+document.getElementById("mostrarTodosButton").addEventListener("click", () =>
+    fetch("./data.json")
+        .then(response => response.json())
+        .then(responseData => {
+            const data = responseData;
+            const baseDeDatosDiv = document.getElementById("baseDeDatos");
 
-//             data.forEach(cliente => {
-//                 const divCliente = document.createElement("div");
-//                 divCliente.innerHTML = `
-//         <h2>Id: ${cliente.id} </h2>
-//         <p>Nombre: ${cliente.nombre}</p>
-//         <p>Direccion: ${cliente.localidad}</p>
-//         <p>Telefono: ${cliente.telefono} <p/>
-//       `;
-//                 baseDeDatosDiv.appendChild(divCliente);
-//             });
-//         })
-//         .catch(error => console.error('Error fetching data:', error))
-// );
+            data.forEach(cliente => {
+                const divCliente = document.createElement("div");
+                divCliente.innerHTML = `
+        <h2>Id: ${cliente.id} </h2>
+        <p>Nombre: ${cliente.nombre}</p>
+        <p>Direccion: ${cliente.localidad}</p>
+        <p>Telefono: ${cliente.telefono} <p/>
+      `;
+                baseDeDatosDiv.appendChild(divCliente);
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error))
+);
 
 
 
